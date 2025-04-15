@@ -208,13 +208,13 @@ const Home = () => {
               to={`/coin/${item.id}`}
               className="grid grid-cols-1 md:grid-cols-5 gap-y-3 md:gap-4 md:px-8 px-4 py-4 border-b border-blue-900 text-white hover:bg-blue-950 transition-all duration-300"
             >
-              {/* Rank */}
+              
               <div className="flex justify-between md:block">
               <p className="text-gray-400 text-xs md:text-sm">Rank</p>
                 <p className="text-sm md:text-base font-medium">{item.market_cap_rank}</p>
               </div>
 
-              {/* Coin Info */}
+              
               <div className="flex items-center gap-3">
                 <img className="w-8 h-8 object-contain" src={item.image} alt={item.name} />
                 <div>
@@ -224,13 +224,13 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Price */}
+              
               <div className="flex justify-between md:block">
                 <p className="text-gray-400 text-xs md:text-sm">Price</p>
                 <p className="text-sm md:text-base">{currency.symbol} {item.current_price.toLocaleString()}</p>
               </div>
 
-              {/* 24hr Change */}
+              
               <div className="flex justify-between md:block">
                 <p className="text-gray-400 text-xs md:text-sm">24h Change</p>
                 <p className={`${item.price_change_percentage_24h > 0 ? 'text-green-500' : 'text-red-500 '} text-sm md:text-base flex items-center gap-1`}>
@@ -243,7 +243,7 @@ const Home = () => {
                 </p>
               </div>
 
-              {/* Market Cap */}
+              
               <div className="flex justify-between md:block">
                 <p className="text-gray-400 text-xs md:text-sm">Market Cap</p>
                 <p className="text-sm md:text-base">{currency.symbol} {item.market_cap.toLocaleString()}</p>

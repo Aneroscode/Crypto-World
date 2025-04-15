@@ -34,34 +34,7 @@ const Navbar = () => {
   
 
   return (
-    // <>
-    //     <div className='  flex items-center justify-between py-6  border-b-2 border-b-blue-950 md:px-28 px-8 '>
-    //       <Link to={'/'} >
-    //         <h3 className='font-bold text-2xl'>CRYPTO-WORLD</h3>
-    //       </Link>  
-
-    //       <ul className='flex items-center gap-8 cursor-pointer'>
-    //         <Link to={'/'} className='hover:border-b-2'>Home</Link>
-    //         <li className='hover:border-b-2'>Features</li>
-    //         <li className='hover:border-b-2'>Pricing</li>
-    //         <li className='hover:border-b-2'>Blog</li>
-    //       </ul>
-
-    //       <div className='flex items-center gap-6'>
-    //         <select onChange={currencyHandler} className=' px-5 py-1 border border-white rounded-xl '>
-    //           <option className='text-blue-700' value='usd'>USD</option>
-    //           <option className='text-blue-700' value='eur'>EUR</option>
-    //           <option className='text-blue-700' value='ghc'>INR</option>
-    //         </select>
-
-    //         <button className='bg-white text-[#0f52ba] px-7 py-1 rounded-2xl hover:bg-transparent hover:text-white hover:border border-white active:bg-white active:text-[#0f52ba]'>Sign Up</button>
-    //       </div>
-    //     </div>
-
-
-
-       
-    // </>
+    
 
     <nav className="bg-blue-950 text-white">
     <div className="flex items-center justify-between py-6 md:px-28 px-6">
@@ -70,7 +43,7 @@ const Navbar = () => {
         <h3 className="font-bold text-2xl">CRYPTO-WORLD</h3>
       </Link>
 
-      {/* Desktop Links */}
+      
       <ul className="hidden md:flex items-center gap-8">
         <li><Link to="/" className="hover:border-b-2 pb-1">Home</Link></li>
         <li className="hover:border-b-2 pb-1 "><Link to='/cryptos'>Coins</Link></li>

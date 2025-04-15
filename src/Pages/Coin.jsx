@@ -37,7 +37,7 @@ const Coin = () => {
       .catch(err => setError(err.message));
   }
 
-  console.log(coinData)
+  
 
   const fetchHistoryData = async () => {
     const options = {
